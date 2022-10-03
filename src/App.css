@@ -1,8 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 body {
+    font-family: 'Open Sans', sans-serif;
 
 }
 
 /* ********************** */
 .Header {
     background-color: #212429;
+    width: 100%;
+    height: 55px;
+    color: white;
+}
+.p-header-left {
+    padding: 6px 70px;
+    font-size: 25px;
+    color: #fbc104;
+    letter-spacing: 1px;
+}
+
+.p2-header-left {
+    margin: -55px 227px;
+    letter-spacing: 1px;
+    display: block;
+    font-size: 19px;
+    color: white;
+}
+
+/*  Search Bar  */ 
+.search-bar-header {
+    margin: 1.3% 52%;
+    width: 48%;
+}
+.Search-bar {
+    width: 474px;
+    border-radius: 5px;
+    background-color: white;
+    height: 39px;
+    text-decoration: none;
+    border: none;
+    outline-style: none;
+}
+
+.Search-bar-button {
+    height: 39px;
+    outline-style: none;
+    border: none;
+    width: 46px;
+    border-radius: 3px;
+    margin-left: -1%;
+}
+
+.signin-button {
+    margin: -3.5% 91%;
+}
+
+.Button-signin {
+    height: 40px;
+    background-color: #fcc204;
+    text-align: center;
+    padding-top: 1px;
+    font-size: 19px;
+    width: 115px;
+    border-radius: 7px;
 }
