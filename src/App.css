@@ -131,17 +131,9 @@ body {
     padding-left: 10px;
 }
 
-.div-rate-star {
-    margin-left: 1%;
-    margin-top: -18px;
-}
-
-.faStar {
-    margin-left: 1%;
-    margin-right: 5px;
-    cursor: pointer;
-}
-
+.p-star-rate {
+    
+} 
 
 @media (min-width: 576px) and (max-width: 768px) {
     .Header {

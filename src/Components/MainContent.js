@@ -1,7 +1,7 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import '../App.css'
 import "@fortawesome/free-regular-svg-icons";
-import { faMagnifyingGlass, faRightToBracket } from "@fortawesome/free-solid-svg-icons";
+import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import pic1 from "../img/anime_pics/pic1.jpg";
 import pic2 from "../img/anime_pics/pic2.jpg";
@@ -16,85 +16,86 @@ import pic10 from "../img/anime_pics/pic10.jpg";
 import MovieDescription from "./MovieDescription";
 import WatchNow from "./WatchNow";
 import MovieCard from "./MovieCard";
-import Rating from "./Rating"
-import React, { useState,useRef } from 'react'
+import React, { useState } from 'react'
 
 const MainContent = () => {
   const SearchBarInput = React.createRef()
+
+
   const [movies, setMovies] = useState([
     {
       Preview: pic1,
       MovieTitle: 'Army Without Time',
       MovieDescription: <MovieDescription />,
       Button: <WatchNow />,
-      Rate: <Rating />
+      Rate: 2,
     },
     {
       Preview: pic2,
       MovieTitle: 'Spider Of The Land',
       MovieDescription: <MovieDescription />,
       Button: <WatchNow />,
-      Rate: <Rating />
+      Rate: 5
     },
     {
       Preview: pic3,
       MovieTitle: 'Warriors Of Stone',
       MovieDescription: <MovieDescription />,
       Button: <WatchNow />,
-      Rate: <Rating />
+      Rate: 4
     },
     {
       Preview: pic4,
       MovieTitle: 'Giants Of The Great',
       MovieDescription: <MovieDescription />,
       Button: <WatchNow />,
-      Rate: <Rating />
+      Rate: 3
     },
     {
       Preview: pic5,
       MovieTitle: 'Guardians And Swindlers',
       MovieDescription: <MovieDescription />,
       Button: <WatchNow />,
-      Rate: <Rating />
+      Rate: 1
     },
     {
       Preview: pic6,
       MovieTitle: 'Blacksmiths And Boys',
       MovieDescription: <MovieDescription />,
       Button: <WatchNow />,
-      Rate: <Rating />
+      Rate: 5
     },
     {
       Preview: pic7,
       MovieTitle: 'Luck Of The Light',
       MovieDescription: <MovieDescription />,
       Button: <WatchNow />,
-      Rate: <Rating />
+      Rate: 1
     },
     {
       Preview: pic8,
       MovieTitle: 'Spire With Immortality',
       MovieDescription: <MovieDescription />,
       Button: <WatchNow />,
-      Rate: <Rating />
+      Rate: 2
     },
     {
       Preview: pic9,
       MovieTitle: 'Symbols In My Past',
       MovieDescription: <MovieDescription />,
       Button: <WatchNow />,
-      Rate: <Rating />
+      Rate: 5
     },
     {
       Preview: pic10,
       MovieTitle: 'Bravery In My Friends',
       MovieDescription: <MovieDescription />,
       Button: <WatchNow />,
-      Rate: <Rating />
+      Rate: 1
     }
   ])
 
-  const [movies_unfiltered, setunMovies] = useState(movies)
+  const [movies_unfiltered] = useState(movies)
 
   const LookForMovie = () => {
     if (SearchBarInput.current.value === '') {
@@ -106,6 +107,7 @@ const MainContent = () => {
   }
 
 
+  
   return (
     <>
 
@@ -117,6 +119,7 @@ const MainContent = () => {
           </button>
         </div>
       </div>
+
 
       <div className="MainPage">
         <div className="MoviesContainer">
@@ -132,9 +135,8 @@ const MainContent = () => {
   
     </>
   );
-
-
 };
+
 
 export default MainContent
 
