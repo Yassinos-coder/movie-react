@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Beginig OF MADNESS  */
+.Header {
+    background-color: #212429;
+    width: 100%;
+    height: 55px;
+    color: white;
+}
+.p-header-left {
+    padding: 6px 70px;
+    font-size: 25px;
+    color: #fbc104;
+    letter-spacing: 1px;
+}
+
+.p2-header-left {
+    margin: -55px 227px;
+    letter-spacing: 1px;
+    display: block;
+    font-size: 19px;
+    color: white;
+}
+
+/*  Search Bar  */ 
+.search-bar-header {
+    position: absolute;
+    margin: -2.2% 52%;
+    width: 48%;
+}
+.Search-bar {
+    width: 474px;
+    border-radius: 5px;
+    background-color: white;
+    height: 39px;
+    text-decoration: none;
+    border: none;
+    outline-style: none;
+}
+
+.Search-bar-button {
+    height: 39px;
+    position: fixed;
+    outline-style: none;
+    border: none;
+    width: 46px;
+    border-radius: 3px;
+    margin-left: -1%;
+    cursor: pointer;
+}
+
+.signin-button {
+    margin: 1.5% 91%;
+}
+
+.Button-signin {
+    height: 40px;
+    background-color: #fcc204;
+    text-align: center;
+    padding-top: 1px;
+    font-size: 19px;
+    width: 115px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+/* Movies Container */ 
+.MainPage {
+    background-color: #e2e3e5;
+    margin: auto;
+    margin-top: 1%;
+    width: 80%;
+    height: 100%;
+}
+
+.MoviesContainer {
+    display: flex;
+    margin: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    gap: 25px;
+    width: 90%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.MoviesContainer img {
+    height: 160px;
+    width: 250px;
+}
+
+.MoviesContainer div {
+    background-color: white;
+    border-radius: 5px;
+}
+
+.MovieTitle {
+    letter-spacing: 1px;
+    padding-left: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: left;
+}
+
+.MovieDescription {
+    padding-left: 10px;
+    font-size: 15px;
+    text-align: left;
+}
+
+.button-watch-now {
+    background-color: #fbc104;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    height: 34px;
+    padding: 5px 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+
+.movie-title-card {
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    padding-left: 10px;
+}
+
+.div-star-rate {
+    margin-left: 4px;
+    margin-top: -10%;
+    padding-left: 10px;
+    width: 60%;
+    font-size: 20px;
+} 
+
+@media (min-width: 576px) and (max-width: 768px) {
+    .Header {
+        background-color: #aaaeb4;
+        width: 100%;
+        height: 55px;
+        color: white;
+    }
+    .p-header-left {
+        padding: 6px 30px;
+        font-size: 20px;
+        color: #fbc104;
+        letter-spacing: 1px;
+    }
+    
+    .p2-header-left {
+        margin: -49px 150px;
+        letter-spacing: 1px;
+        display: block;
+        font-size: 16px;
+        color: white;
+    }
+    
+    /*  Search Bar  */ 
+    .search-bar-header {
+        margin: 3.3% 38%;
+        width: 48%;
+    }
+    .Search-bar {
+        width: 177px;
+        border-radius: 5px;
+        background-color: white;
+        height: 39px;
+        text-decoration: none;
+        border: none;
+        outline-style: none;
+    }
+    
+    .Search-bar-button {
+        height: 39px;
+        outline-style: none;
+        border: none;
+        width: 46px;
+        border-radius: 3px;
+        position: fixed;
+        margin-left: -1%;
+    }
+    
+    .signin-button {
+        margin: -9.8% 78%;
+    }
+    
+    .Button-signin {
+        height: 36px;
+        background-color: #fcc204;
+        text-align: center;
+        padding-top: 1px;
+        font-size: 19px;
+        width: 115px;
+        border-radius: 7px;
+        cursor: pointer;
+    }
+}
